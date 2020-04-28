@@ -6,3 +6,9 @@
 </ng-template>
 
 <button (click)="showLoading()" >Loading?</button>
+<hr>
+<div *ngFor="let producto of productos" class="product">
+    <p>Producto: {{producto.name}}</p>
+    <p>Stock: {{producto.stock}} </p>
+    <p>Precio: {{producto.price}} </p>
+</div>
