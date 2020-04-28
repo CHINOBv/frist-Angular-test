@@ -1,0 +1,11 @@
+<input type="text" (ngModelChange) = "valid()" [(ngModel)]="user" ngm >
+<input type="password" [(ngModel)]="pass"  >
+
+<button (dblclick)="ingresar()" >Init</button>
+
+<input type="text" (input) = "typing($event)" >
+<input type="text" (focus) = "background($event)" >
+
+<div *ngFor="let user of users" >
+    <p>{{user}}</p>
+</div>

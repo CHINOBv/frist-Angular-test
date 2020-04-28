@@ -1,0 +1,8 @@
+<ng-container *ngIf="loading; else elses">
+    <p>Loading....</p>
+</ng-container>
+<ng-template #elses>
+    <p>Ready</p>
+</ng-template>
+
+<button (click)="showLoading()" >Loading?</button>
